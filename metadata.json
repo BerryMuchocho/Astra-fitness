@@ -1,0 +1,6 @@
+{
+  "name": "Astra Fitness",
+  "description": "An elite high-performance fitness center application with workout galleries, interactive touch features, pricing plan calculators, and offline-ready saved favorites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

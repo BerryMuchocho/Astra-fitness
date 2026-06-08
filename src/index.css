@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Editorial theme palette matching high luxury kinetic layout */
+  --color-brand-orange: #facc15;
+  --color-brand-orange-light: #fef08a;
+  --color-brand-orange-dark: #ca8a04;
+  
+  /* Luxury gold color theme tokens */
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-light: #f3d674;
+  --color-brand-gold-dark: #aa8416;
+
+  --color-brand-black-deep: #050505;
+  --color-brand-black-card: #0c0c0c;
+  --color-brand-black-elevated: #161616;
+  --color-brand-gray-light: #f5f5f5;
+  --color-brand-gray-muted: #a3a3a3;
+  --color-brand-gray-border: #262626;
+}
+
+/* Custom Scrollbar utilities */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Smooth zoom transition */
+.image-zoom-transition {
+  transition: transform 0.15s ease-out;
+}
+
+/* Pulse animation for simulated low connectivity */
+@keyframes offline-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-offline {
+  animation: offline-pulse 2s infinite ease-in-out;
+}
+
+/* Ken Burns Luxury Zoom Animation */
+@keyframes luxury-ken-burns {
+  0% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+.animate-luxury-zoom {
+  animation: luxury-ken-burns 6.5s ease-out forwards;
+}
+
+/* Infinite Scrolling Marquee Ribbon */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+/* Video Play Progress Animation mimicking trucknroll play flows */
+@keyframes video-play-progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.animate-video-play-progress {
+  animation: video-play-progress 8s linear infinite;
+}
+
+/* Looping Slow Pan & Zoom for Splash Banners */
+@keyframes splash-parallax-pan {
+  0%, 100% {
+    transform: scale(1.05) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.15) translate(-1%, -0.5%);
+  }
+}
+.animate-splash-parallax {
+  animation: splash-parallax-pan 24s ease-in-out infinite;
+}
+
+/* Reverse Infinite Scrolling Marquee Ribbon */
+@keyframes marquee-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 22s linear infinite;
+}
+
