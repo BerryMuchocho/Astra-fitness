@@ -22,11 +22,11 @@ export default function MembershipPlans({ onPlanSelected }: MembershipPlansProps
     <section id="membership-tiers" className="scroll-mt-16 py-0 pb-4 bg-gray-50 dark:bg-brand-black-card border-t border-gray-100 dark:border-brand-gray-border/20 transition-colors duration-200">
       
       {/* Compact Minimal Marquee divider */}
-      <div className="relative h-[80px] sm:h-[100px] bg-brand-black-deep overflow-hidden flex flex-col justify-center py-1.5 select-none w-full mb-4">
+      <div className="relative h-[110px] sm:h-[135px] bg-brand-black-deep overflow-hidden flex flex-col justify-center py-2 select-none w-full mb-6">
         
-        {/* Ribbon 1: Gold background, clean sans-serif text, scrolls left, rotated -1 deg */}
-        <div className="w-[115%] -ml-[7.5%] -rotate-1 bg-brand-gold text-brand-black-deep py-1 sm:py-1.5 border-y border-brand-gold/20 shadow-md overflow-hidden flex items-center relative z-20">
-          <div className="flex w-max items-center animate-marquee whitespace-nowrap text-[10px] sm:text-xs font-display font-medium tracking-[0.25em] uppercase">
+        {/* Ribbon 1: Gold background, clean sans-serif text, scrolls left, rotated -1.5 deg */}
+        <div className="w-[115%] -ml-[7.5%] -rotate-[1.5deg] bg-brand-gold text-brand-black-deep py-2 sm:py-2.5 border-y border-brand-gold/20 shadow-md overflow-hidden flex items-center relative z-20">
+          <div className="flex w-max items-center animate-marquee whitespace-nowrap text-xs sm:text-base font-display font-black tracking-[0.25em] uppercase">
             {[...Array(8)].map((_, i) => (
               <span key={i} className="mx-16">
                 ASTRA FITNESS
@@ -35,21 +35,21 @@ export default function MembershipPlans({ onPlanSelected }: MembershipPlansProps
           </div>
         </div>
 
-        {/* Ribbon 2: Dark black background, elegant italic serif text, scrolls right, rotated 1 deg */}
-        <div className="w-[115%] -ml-[7.5%] rotate-1 bg-brand-black-elevated text-white py-1 sm:py-1.5 border-y border-brand-gray-border/30 shadow-md overflow-hidden flex items-center relative mt-1 z-10">
-          <div className="flex w-max items-center animate-marquee-reverse whitespace-nowrap text-sm sm:text-lg font-serif italic font-light tracking-[0.1em] lowercase">
+        {/* Ribbon 2: Dark black background, elegant italic serif text, scrolls right, rotated 1.5 deg */}
+        <div className="w-[115%] -ml-[7.5%] rotate-[1.5deg] bg-brand-black-elevated text-white py-2 sm:py-2.5 border-y border-brand-gray-border/30 shadow-md overflow-hidden flex items-center relative mt-1.5 z-10">
+          <div className="flex w-max items-center animate-marquee-reverse whitespace-nowrap text-base sm:text-xl font-serif italic font-bold tracking-[0.1em] lowercase">
             {[...Array(4)].map((_, i) => (
               <React.Fragment key={i}>
-                <span className="mx-12 sm:mx-16 text-white">strength</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold font-light font-sans tracking-normal opacity-55">/</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold-light">grace</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold font-light font-sans tracking-normal opacity-55">/</span>
-                <span className="mx-12 sm:mx-16 text-white">focus</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold font-light font-sans tracking-normal opacity-55">/</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold-light">flow</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold font-light font-sans tracking-normal opacity-55">/</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold-light">restore</span>
-                <span className="mx-12 sm:mx-16 text-brand-gold font-light font-sans tracking-normal opacity-55">/</span>
+                <span className="mx-12 sm:mx-16 text-white font-bold">strength</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold font-bold font-sans tracking-normal opacity-70">/</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold-light font-bold">grace</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold font-bold font-sans tracking-normal opacity-70">/</span>
+                <span className="mx-12 sm:mx-16 text-white font-bold">focus</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold font-bold font-sans tracking-normal opacity-70">/</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold-light font-bold">flow</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold font-bold font-sans tracking-normal opacity-70">/</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold-light font-bold">restore</span>
+                <span className="mx-12 sm:mx-16 text-brand-gold font-bold font-sans tracking-normal opacity-70">/</span>
               </React.Fragment>
             ))}
           </div>
